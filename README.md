@@ -91,7 +91,7 @@ package: [`@kilidify/claude`](https://www.npmjs.com/package/@kilidify/claude)
 
 ## How it works
 
-| | |
+| | How it works |
 | --- | --- |
 | **Interface** | OpenAI-compatible and Anthropic Messages. Chat completions, streaming, model listing, plus everything else in the upstream surface, forwarded verbatim. |
 | **Payment** | Funded in Iranian rial through domestic bank gateways. Card details are entered on the bank's own page and never reach Kilidify. |
@@ -178,7 +178,7 @@ Every code, with its status and what to do about it:
 
 ## Documentation
 
-| | |
+| Page | Covers |
 | --- | --- |
 | [`docs/quickstart.md`](docs/quickstart.md) | Account, key, first request, in any of four languages. |
 | [`docs/claude-code.md`](docs/claude-code.md) | Claude Code, permanent setup, MCP tools, troubleshooting. |
