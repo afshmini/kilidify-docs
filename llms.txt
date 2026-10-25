@@ -1,0 +1,65 @@
+# Kilidify
+
+> Kilidify (Persian: کلیدیفای) is an AI gateway for developers in Iran. It
+> provides one API endpoint, answering both the OpenAI and the Anthropic
+> Messages shapes, that reaches several hundred models from Anthropic, OpenAI,
+> Google, Meta, DeepSeek, Mistral, Z.ai and Qwen. Accounts are funded in Iranian
+> rial through domestic bank gateways, so no international payment card is
+> required. Kilidify does not train or host models: it resells upstream capacity
+> and owns the billing, the rial payment path and the per-key spending controls.
+> The product is in Persian; this repository is the public documentation.
+
+Base URL: https://api.kilidify.com/v1
+Keys look like `kl_live_…` and may be sent as `Authorization: Bearer …` or as
+`x-api-key`.
+
+Two API shapes, chosen by the request rather than by configuration: a request
+whose path starts `/v1/messages` or which carries an `anthropic-version` header
+gets the Anthropic shape, and everything else gets the OpenAI shape. This is
+why the official Anthropic SDKs and Claude Code work without a translation
+layer. Errors follow the same rule; errors from the upstream provider are
+relayed unchanged because clients match on their wording.
+
+Billing: per token, at the model's own rate plus a 15% service fee which is
+already included in the prices returned by `/v1/models`. Wallet credit is held
+in US dollars; top-ups are paid in rial at the free-market rate, refreshed every
+five minutes, and the rate used is recorded on the transaction rather than
+re-applied later.
+
+Limits: every API key carries its own monthly budget, requests-per-minute limit
+and list of permitted models. Balance is checked before a request is forwarded,
+so an empty wallet stops requests instead of creating a debt.
+
+Privacy: request and response content is not stored. Only the model name, token
+counts, cost and timestamp are recorded, which is what the invoice and the usage
+report are built from.
+
+## Endpoints
+
+- `GET /v1/models` (auth optional): the catalogue. Without a key, everything
+  served; with a key, only what that key may use.
+- `POST /v1/chat/completions` (auth required): OpenAI-shaped, streaming supported.
+- `POST /v1/messages` (auth required): Anthropic-shaped, streaming supported.
+- `GET /v1/credits` and `GET /v1/me` (auth required): balance, reserved and
+  available amounts, rate limit, monthly budget, permitted models.
+- Anything else under `/v1` is forwarded to the upstream provider unchanged.
+
+## Documentation
+
+- [README](README.md): what it is, quickstart, endpoints, errors.
+- [README.fa.md](README.fa.md): the same in Persian.
+- [docs/quickstart.md](docs/quickstart.md): first request in curl, Python, Node and the Anthropic SDK.
+- [docs/claude-code.md](docs/claude-code.md): running Claude Code against a rial-funded wallet.
+- [docs/models.md](docs/models.md): model ids, batch tiers, floating `latest` aliases, `kilidify/auto`, per-key restrictions.
+- [docs/billing.md](docs/billing.md): how a request becomes a charge, the dollar rate, budgets and limits.
+- [docs/errors.md](docs/errors.md): every error code, its HTTP status and the fix.
+- [docs/faq.md](docs/faq.md): the questions asked first.
+- [examples/](examples/): runnable curl, Python and Node.
+
+## Notes
+
+- This file follows the llms.txt convention. No assistant is known to require
+  it; it is here because it states the product plainly in one place at almost no
+  cost.
+- The service runs at https://kilidify.com. The service code is not open source;
+  the documentation and examples in this repository are MIT.
