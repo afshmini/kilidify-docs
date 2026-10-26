@@ -6,7 +6,8 @@
 
 <p align="center">
   <strong>An AI gateway for developers in Iran.</strong><br>
-  One OpenAI-compatible API for several hundred models, paid for in Iranian rial.
+  One OpenAI- and Anthropic-compatible API for several hundred models,<br>
+  paid for in Iranian rial.
 </p>
 
 <p align="center">
