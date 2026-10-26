@@ -1,5 +1,7 @@
 # Models
 
+[فارسی](fa/models.md)
+
 ## Finding out what is available
 
 ```bash

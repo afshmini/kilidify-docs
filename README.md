@@ -188,6 +188,8 @@ Every code, with its status and what to do about it:
 | [`docs/errors.md`](docs/errors.md) | Every error code and the fix. |
 | [`docs/faq.md`](docs/faq.md) | The questions people actually ask first. |
 
+Every page above also exists in Persian, in [`docs/fa/`](docs/fa/).
+
 ## Tools
 
 - **[`@kilidify/claude`](https://www.npmjs.com/package/@kilidify/claude)**, the

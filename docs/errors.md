@@ -1,5 +1,7 @@
 # Errors
 
+[فارسی](fa/errors.md)
+
 Two rules worth knowing before the table.
 
 **Kilidify's own errors are reshaped to match your client; the upstream's are

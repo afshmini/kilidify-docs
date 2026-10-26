@@ -1,5 +1,7 @@
 # Claude Code through Kilidify
 
+[فارسی](fa/claude-code.md)
+
 Claude Code talks to whatever `ANTHROPIC_BASE_URL` points at, using the
 Anthropic Messages API. Kilidify's gateway answers that API, so Claude Code runs
 against your rial-funded wallet with no patching and no proxy of your own.

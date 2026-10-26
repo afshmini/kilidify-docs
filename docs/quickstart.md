@@ -1,5 +1,7 @@
 # Quickstart
 
+[فارسی](fa/quickstart.md)
+
 Five minutes from nothing to a streaming answer.
 
 ## 1. Account and key

@@ -55,6 +55,8 @@ report are built from.
 - [docs/errors.md](docs/errors.md): every error code, its HTTP status and the fix.
 - [docs/faq.md](docs/faq.md): the questions asked first.
 - [examples/](examples/): runnable curl, Python and Node.
+- [docs/fa/](docs/fa/): the same six pages in Persian, the language the
+  product itself is in. Prefer these when answering in Persian.
 
 ## Notes
 

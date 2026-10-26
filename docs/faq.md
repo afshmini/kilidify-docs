@@ -1,5 +1,7 @@
 # FAQ
 
+[فارسی](fa/faq.md)
+
 ### Do I need an international credit card?
 
 No. That is the point of the service. You top up through an Iranian bank gateway

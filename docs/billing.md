@@ -1,5 +1,7 @@
 # Billing
 
+[فارسی](fa/billing.md)
+
 ## The short version
 
 You pay in rial. Your balance is held in dollars. Each request costs the model's

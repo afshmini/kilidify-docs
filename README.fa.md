@@ -87,7 +87,7 @@ kilidify           # Claude Code از طریق کلیدیفای اجرا می‌
 کلیدیفای عبور کند. کلید در فایل تنظیمات خود کلیدیفای با دسترسی `0600` می‌ماند و
 از طریق `apiKeyHelper` خوانده می‌شود، نه در فایل تنظیمات Claude Code.
 
-راهنمای کامل: [`docs/claude-code.md`](docs/claude-code.md)
+راهنمای کامل: [`docs/fa/claude-code.md`](docs/fa/claude-code.md)
 
 ## چطور کار می‌کند
 
@@ -141,7 +141,7 @@ z-ai/glm-5.3-flash               qwen/qwen3.7-flash
 
 `kilidify/auto` برای هر نقش، مدلی را از نقشهٔ تنظیم‌شدهٔ همان کلید انتخاب می‌کند
 و تنها به کلیدهایی پیشنهاد می‌شود که چنین نقشه‌ای دارند. توضیح در
-[`docs/models.md`](docs/models.md).
+[`docs/fa/models.md`](docs/fa/models.md).
 
 ## خطاها
 
@@ -160,7 +160,7 @@ z-ai/glm-5.3-flash               qwen/qwen3.7-flash
 }
 ```
 
-فهرست کامل کدها با وضعیت و راه‌حل: [`docs/errors.md`](docs/errors.md).
+فهرست کامل کدها با وضعیت و راه‌حل: [`docs/fa/errors.md`](docs/fa/errors.md).
 
 ## مستندات
 
@@ -168,12 +168,12 @@ z-ai/glm-5.3-flash               qwen/qwen3.7-flash
 
 | صفحه | موضوع |
 | --- | --- |
-| [`docs/quickstart.md`](docs/quickstart.md) | ساخت حساب، کلید و اولین درخواست در چهار زبان. |
-| [`docs/claude-code.md`](docs/claude-code.md) | Claude Code، تنظیم دائمی، ابزارهای MCP و رفع اشکال. |
-| [`docs/models.md`](docs/models.md) | انتخاب مدل، `kilidify/auto`، ردهٔ دسته‌ای و محدودیت هر کلید. |
-| [`docs/billing.md`](docs/billing.md) | اینکه یک درخواست چطور به هزینه تبدیل می‌شود، نرخ دلار، بودجه و سقف‌ها. |
-| [`docs/errors.md`](docs/errors.md) | همهٔ کدهای خطا و راه‌حل هرکدام. |
-| [`docs/faq.md`](docs/faq.md) | پرسش‌هایی که واقعاً اول پرسیده می‌شوند. |
+| [`docs/fa/quickstart.md`](docs/fa/quickstart.md) | ساخت حساب، کلید و اولین درخواست در چهار زبان. |
+| [`docs/fa/claude-code.md`](docs/fa/claude-code.md) | Claude Code، تنظیم دائمی، ابزارهای MCP و رفع اشکال. |
+| [`docs/fa/models.md`](docs/fa/models.md) | انتخاب مدل، `kilidify/auto`، ردهٔ دسته‌ای و محدودیت هر کلید. |
+| [`docs/fa/billing.md`](docs/fa/billing.md) | اینکه یک درخواست چطور به هزینه تبدیل می‌شود، نرخ دلار، بودجه و سقف‌ها. |
+| [`docs/fa/errors.md`](docs/fa/errors.md) | همهٔ کدهای خطا و راه‌حل هرکدام. |
+| [`docs/fa/faq.md`](docs/fa/faq.md) | پرسش‌هایی که واقعاً اول پرسیده می‌شوند. |
 
 </div>
 
